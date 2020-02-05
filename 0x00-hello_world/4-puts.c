@@ -1,10 +1,9 @@
 #!/bin/bash
 #include <stdio.h>
-
-
-int main(){
-        char ch[100];
-        puts('"Programming is like building a multilingual puzzle');
-        
-        return 0;
+int main()
+{
+        char str1[100];
+        strcpy(str1,"Programming is like building a multilingual puzzle");
+	puts(str1);
+return 0;
 }
