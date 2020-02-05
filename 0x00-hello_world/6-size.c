@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - prints the size of types on the comuter
- * Return :0
+ * Return: 0
  */
 int main(void)
 {
