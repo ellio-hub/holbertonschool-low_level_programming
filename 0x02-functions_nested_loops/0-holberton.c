@@ -1,6 +1,6 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
-* main - writes Holberton
+* main - print Holberton
 * @void: empty
 * Return: 0
 */
