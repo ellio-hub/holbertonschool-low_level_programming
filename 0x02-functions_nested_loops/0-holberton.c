@@ -3,8 +3,16 @@
  *main - prints something
  * Return: 0
  */
-int main(void)
+char main()
 {
-printf("Holberton\n");
+  putchar("H");
+  putchar("o");
+  putchar("l");
+  putchar("b");
+  putchar("e");
+  putchar("r");
+  putchar("t");
+  putchar("o");
+  putchar("n/n");
 return (0);
 }
