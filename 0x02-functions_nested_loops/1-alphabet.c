@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-* main - prints the alphabet
-* @ch: char
-* Return: 0
-*/
-
-int main(void)
+ *print_alphabet - main function
+ *@void: empty
+ *Return: 0
+ */
+void print_alphabet(void)
 {
-char ch;
+char ch = 'a';
 
-for (ch = 'A' ; ch <= 'Z' ; ch++)
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-putchar(ch);
+_putchar(ch);
 }
-putchar("\n");
-return (0);
+_putchar('\n');
+return;
 }
