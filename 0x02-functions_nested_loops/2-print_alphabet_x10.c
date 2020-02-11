@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *print_alphabet - main function
+ *print_alphabet_x10 - main function
  *@void: empty
- *Return: 0
+ *Return: void
  */
 void print_alphabet_x10(void)
 {
