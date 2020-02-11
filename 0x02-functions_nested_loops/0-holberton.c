@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <betty.h>
 /**
  *main - prints something
  * Return: 0
  */
-char main()
+main()
 {
   putchar("H");
   putchar("o");
@@ -13,6 +14,7 @@ char main()
   putchar("r");
   putchar("t");
   putchar("o");
-  putchar("n/n");
+  putchar("n");
+  putchar("\n");
 return (0);
 }
