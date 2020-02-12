@@ -1,0 +1,17 @@
+#include "holberton.h"
+#include <stdio.h>
+/**
+ * _abs - main function
+ * @c: integer
+ * Return: 0
+ */
+int _abs(int)
+{
+if (c < 0)
+{
+c = c*(-1);
+printf("%d\n", c);
+}
+else
+printf("%d\n", c);
+}
