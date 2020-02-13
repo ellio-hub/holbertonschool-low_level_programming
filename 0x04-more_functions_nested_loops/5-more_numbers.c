@@ -15,7 +15,7 @@ char ch = '0';
 for (x = 0 ; x <= 14 ; x++)
 {
 if (x > 9)
-_putchar('1'); 
+_putchar('1');
 _putchar(ch);
 ch++;
 if (x == 9)
