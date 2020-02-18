@@ -11,6 +11,8 @@ int l;
 int i;
 int x;
 for (l = 0; str[l] != '\0'; l++)
+{
+}
 x = (l + 1) / 2;
 for (i = x; str[i] != '\0'; i++)
 {
