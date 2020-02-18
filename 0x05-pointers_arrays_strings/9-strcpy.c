@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _strcpy - copy a string
- * @source: parameter
+ * @src: parameter
  * @dest: parameter
  *
  * Return: the pointer to dest
