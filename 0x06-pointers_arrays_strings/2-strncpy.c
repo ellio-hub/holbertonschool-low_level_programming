@@ -14,9 +14,13 @@ int l;
 for (l = 0; dest[l] != '\0'; l++)
 {
 }
-for (i = 0; i <= n - 1; i++)
+for (i = 0; src[i] != '\0'; i++)
 {
 dest[i] = src[i];
+}
+for ( ; i < n; i++)
+{
+dest[i] = '\0';
 }
 return (dest);
 }
