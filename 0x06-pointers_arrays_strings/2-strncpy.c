@@ -14,7 +14,7 @@ int l;
 for (l = 0; dest[l] != '\0'; l++)
 {
 }
-for (i = 0; src[i] != '\0'; i++)
+for (i = 0; i < n && src[i] != '\0'; i++)
 {
 dest[i] = src[i];
 }
