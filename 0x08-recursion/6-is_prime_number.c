@@ -1,9 +1,8 @@
 #include "holberton.h"
-
 /**
- * is_prime_number - check if n is prime
- * @n: the number to check
- * Return: 1 if prime 0 otherwise
+ * is_prime_number - main function
+ * @n: parameter
+ * Return: 1 or 0 
  */
 int is_prime_number(int n)
 {
@@ -15,10 +14,10 @@ return (0);
 return (check_prime(i, n));
 }
 /**
- * _prime - check if n is prime
- * @i: divisor
- * @n: number to check
- * Return: 1 if prime 0 otherwise
+ * _prime - function
+ * @i: parameter
+ * @n: parameter
+ * Return: 1 or 0
  */
 int _prime(int i, int n)
 {
