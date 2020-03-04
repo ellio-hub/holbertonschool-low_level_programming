@@ -13,7 +13,7 @@ char *tab;
 if (size == 0)
 return (NULL);
 tab = malloc(size * sizeof(char));
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
 tab[i] = c;
 return (tab);
 }
