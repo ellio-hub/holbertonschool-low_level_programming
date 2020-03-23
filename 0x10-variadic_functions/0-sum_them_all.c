@@ -4,7 +4,7 @@
  * sum_them_all - main function
  * @n: parameter
  *
- * return: int
+ * Return: int
  */
 int sum_them_all(const unsigned int n, ...)
 {
