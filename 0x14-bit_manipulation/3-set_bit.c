@@ -3,13 +3,13 @@
  * set_bit - main function
  * @n: parameter
  * @index: parameter
- * 
+ *
  * Return: int
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
 if (!n || !index)
-return(-1);
+return (-1);
 unsigned int w;
 char x[index];
 int i;
