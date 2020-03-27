@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <limits.h>
 /**
  * print_binary - main function
  * @n: parameter
@@ -7,8 +8,9 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int m = 32768;
+unsigned long int m = ULONG_MAX;
 int x = 0;
+m = (m ^ (m >> 1));
 if (n == 0)
 _putchar('0');
 else
