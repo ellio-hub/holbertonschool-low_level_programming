@@ -8,12 +8,12 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-if (!b)
-return (0);
 int i = 0;
 int l;
 int q = 1;
 unsigned int x = 0;
+if (!b)
+return (0);
 for (l = 0; b[l] != '\0'; l++)
 {
 if ((b[l] != '0') && (b[l] != '1'))
