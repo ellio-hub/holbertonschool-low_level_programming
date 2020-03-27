@@ -8,6 +8,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
+if (!b)
+return (0);
 int i = 0;
 int l;
 int q = 1;
@@ -17,8 +19,6 @@ for (l = 0; b[l] != '\0'; l++)
 if ((b[l] != '0') && (b[l] != '1'))
 return (0);
 }
-if (l == 0)
-return (0);
 for (i = (l - 1); i >= 0; i--)
 {
 x += ((b[i] - 48) * q);
