@@ -13,5 +13,5 @@ return (-1);
 unsigned long int x = 1;
 x = x << index;
 *n = (*n | x);
-return(0);
+return (0);
 }
