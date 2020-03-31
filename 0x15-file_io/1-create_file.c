@@ -15,10 +15,14 @@ if (op == -1)
 return (-1);
 if (text_content)
 {
-for (i = 0; text_content[i]; i++);
-c = write(op, text_content, i);
+for (i = 0; text_content[i]; i++)
+{}
 if (c == -1)
+{
+close(op);
 return (-1);
 }
+}
+close(op);
 return (1);
 }
