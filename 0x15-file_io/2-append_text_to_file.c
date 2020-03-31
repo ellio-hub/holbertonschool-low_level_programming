@@ -19,7 +19,7 @@ if (text_content)
 {
 for (i = 0; text_content[i]; i++)
 ;
-c = crite(op, text_content, i);
+c = write(op, text_content, i);
 if (c == -1)
 return (-1);
 }
