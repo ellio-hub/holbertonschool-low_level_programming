@@ -16,7 +16,7 @@ return (-1);
 if (text_content)
 {
 for (i = 0; text_content[i]; i++)
-{}
+;
 if (c == -1)
 {
 close(op);
