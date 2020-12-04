@@ -19,7 +19,7 @@ if ((b > a) && (c > b))
 putchar(a);
 putchar(b);
 putchar(c);
-if ((a != (b - 1)) || (b != (c - 1)) || (c != 9))
+if ((a != (b - 1)) || (b != (c - 1)) || (c != '9'))
 {
 putchar(',');
 putchar(' ');
