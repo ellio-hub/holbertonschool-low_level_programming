@@ -23,7 +23,7 @@ putchar(b);
 putchar(' ');
 putchar(c);
 putchar(d);
-if ((a != '9') || (b != '9') || (c != 9) || (d != 9))
+if ((((a * 10) + b) != (((c * 10) + d) - 1)) || (d != '9') || (c != '9'))
 {
 putchar(',');
 putchar(' ');
