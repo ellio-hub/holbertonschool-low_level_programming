@@ -16,6 +16,6 @@ b = s;
 printf("%ld, ", s);
 }
 s = a + b;
-printf("%ld", s);
+printf("%ld ", s);
 return (0);
 }
