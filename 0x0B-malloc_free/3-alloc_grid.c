@@ -5,7 +5,7 @@
  * alloc_grid - main function
  * @width: parameter
  * @height:parameter
- * return: a
+ * Return: a
  */
 
 int **alloc_grid(int width, int height)

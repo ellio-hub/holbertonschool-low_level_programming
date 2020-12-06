@@ -15,13 +15,16 @@ char *s;
 if (s1 == NULL)
 i = 0;
 else
-for (i = 0; s1[i]; i++);
+for (i = 0; s1[i]; i++)
+;
 if (s2 == NULL)
 z = 0;
 else
-for (z = 0; s2[z]; z++);
+for (z = 0; s2[z]; z++)
+;
 p = i + z + 1;
-s = malloc(p * sizeof(char));
+s = malloc(p *sizeof(char))
+;
 if (s == NULL)
 return (NULL);
 for (l = 0; l < i; l++)
