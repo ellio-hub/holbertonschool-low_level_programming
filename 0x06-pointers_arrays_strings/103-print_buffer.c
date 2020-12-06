@@ -30,7 +30,7 @@ printf(".");
 else
 printf("%c", b[j]);	}
 printf("\n"); x = i + 1;	}
-if  x < size - 1)
+if  (x < size - 1)
 {
 i -= 9;
 printf("%.8x: ", i);
