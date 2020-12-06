@@ -13,9 +13,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 int d, s, m, n;
 int i = 0;
+int x = 0;
 while (n1[i])
 i++;
-int x = 0;
 while (n2[x])
 x++;
 if (i > size_r || x > size_r)
