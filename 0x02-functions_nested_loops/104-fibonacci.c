@@ -7,16 +7,16 @@
 
 int main(void)
 {
-unsigned long int a = 0, b = 1, s;
+unsigned long long int a = 0, b = 1, s;
 int i;
 for (i = 1; i < 98; i++)
 {
 s = a + b;
 a = b;
 b = s;
-printf("%lu, ", s);
+printf("%llu, ", s);
 }
 s = a + b;
-printf("%lu\n", s);
+printf("%llu\n", s);
 return (0);
 }
