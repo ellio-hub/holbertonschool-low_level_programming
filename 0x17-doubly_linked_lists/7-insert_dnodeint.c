@@ -2,6 +2,7 @@
 
 /**
  * insert_dnodeint_at_index - main function
+ * @h:parameter
  * @idx:parameter
  * @n:parameter
  * Return: adress of new node or NULL
