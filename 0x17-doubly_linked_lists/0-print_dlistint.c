@@ -3,7 +3,7 @@
 /**
  * print_dlistint - main function
  * @h: parameter
- * return: n
+ * Return: n
  */
 
 size_t print_dlistint(const dlistint_t *h)
