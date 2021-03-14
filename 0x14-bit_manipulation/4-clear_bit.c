@@ -13,8 +13,8 @@ if ((*n >> index) & 1)
 {
 x = x << index;
 *n = (*n ^ x);
-return (1);
+return (-1);
 }
 else
-return (-1);
+return (1);
 }

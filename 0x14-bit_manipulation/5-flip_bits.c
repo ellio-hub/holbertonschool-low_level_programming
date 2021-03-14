@@ -6,7 +6,16 @@
  *
  * Return: unsigned int
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
+unsigned int flip_bits(unsigned long int n, unsigned long int m):
 {
-return (1);
+unsigned long int x;
+int i = 0;
+x = n ^ m;
+while (x >= 1)
+{
+if ((x & 1) == 1)
+i++;
+x >>= 1;
+}
+return (i);
 }
