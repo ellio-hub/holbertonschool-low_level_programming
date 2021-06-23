@@ -5,50 +5,35 @@
  * @array: pointer to the first element of the arra
  * @size: the number of elements in array
  * @value: the value to search for
- * return: int
+ * Return: int
  */
- 
 int jump_search(int *array, size_t size, int value)
 {
-unsigned int s = sqrt(size), l = 0, r = 0, i;
-if (array == NULL || size == 0)
+int step = 0, i = 0, w = 0;
+if (array == NULL)
 return (-1);
-while (l < size && array[l] <= value)
+step = sqrt(size);
+while (array[i] < value && i < (int) size)
 {
-printf("Value checked array[%d] = [%d]\n", l, array[l]);
-r = min(size - 1, l + s);
-if (array[l] <= value && array[r] >= value)
+w = i;
+i = w + step;
+if (w < (int) size)
+printf("Value checked array[%d] = [%d]\n", w, array[w]);
+}
+if (w >= (int) size && array[size] != value)
+w -= step;
+printf("Value found between indexes [%d] and [%d]\n", w, w + step);
+while (array[w] < value)
+{
+if (w >= (int) size)
 break;
-l += s;
+printf("Value checked array[%d] = [%d]\n", w, array[w]);
+w += 1;
 }
-if (value > array[r])
+if (array[w] == value)
 {
-printf("Value found between indexes [%d] and [%d]\n",
-l - s, l);
-printf("Value checked array[%d] = [%d]\n",
-l - s, array[l - s]);
-}
-else
-printf("Value found between indexes [%d] and [%d]\n",l, r);
-if (l >= size || array[l] > value)
-return (-1);
-r = min(size - 1, r);
-for (i = l; i <= r && array[i] <= value; i++)
-{
-printf("Value checked array[%d] = [%d]\n", i, array[i]);
-if (array[i] == value)
-return (i);
+printf("Value checked array[%d] = [%d]\n", w, array[w]);
+return (w);
 }
 return (-1);
-}
-
-/**
- * min - find the smallest number
- * @a: parameter
- * @b: parameter
- * return: int
- */
-int min(int a, int b)
-{
-return (a < b ? a : b);
 }
