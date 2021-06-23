@@ -15,8 +15,8 @@ if (array == NULL && size == 0)
 return (-1);
 while ((array[h] != array[l]))
 {
-p = l + ((value - array[l]) * (h - l) /(array[h] - array[l]));
-if (p < 1 || p > h)
+p = l + ((value - array[l]) * (h - l) / (array[h] - array[l]));
+if (p < 0 || p > h)
 {
 printf("Value checked array[%lu] is out of range\n", p);
 break;
